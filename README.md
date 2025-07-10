@@ -1,29 +1,18 @@
-# 🧬 B2B SaaS CI/CD Scaffold with FastAPI, Docker & GitHub Actions
+# 🚀 B2B SaaS CI/CD Pipeline with FastAPI & Fly.io
 
-A production-ready CI/CD pipeline scaffold for deploying FastAPI-based B2B SaaS platforms using **Docker**, **GitHub Actions**, and **Fly.io**.
+A real-world inspired DevOps pipeline for staging/production deployments of a FastAPI app via GitHub Actions and Fly.io.
 
----
+## 🔧 Features
 
-## 🚀 Stack
+- 🐳 Docker-based microservice
+- 🚀 Auto-deployment to Fly.io via GitHub Actions
+- 🧪 Pytest-based testing
+- 📂 Secrets via GitHub Actions and Fly.io
+- 🛠️ Local dev with `venv` or `pipx`
 
-- **FastAPI** — async Python web framework
-- **Docker** — containerization
-- **GitHub Actions** — CI/CD automation
-- **Fly.io** — production & staging hosting
-- **Python 3.12+**
-- **uvicorn** — ASGI server
+## 🧪 Quick Start
 
----
-
-## 🛠️ Features
-
-- ✅ Auto-deploy to Fly.io from `main` branch
-- ✅ Branch-based environments: `dev` → staging, `main` → production
-- ✅ GitHub Actions for CI/CD
-- ✅ Dockerized setup
-- ✅ Scalable for microservices or monoliths
-
----
-
-## 📁 Project structure
-
+```bash
+# Run locally
+pipx install fastapi[standard]
+uvicorn app.main:app --reload
